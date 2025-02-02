@@ -10,7 +10,7 @@ const Reservation = () => (
                 <View className=''>
                     <View className='items-center '>
                         <Text className="text-xs">ایران</Text>
-                        <Text className='-mt-1 text-xs'>۱۲</Text>
+                        <Text className='-mt-1 text-sm'>۱۲</Text>
                     </View>
                 </View>
                 <View className='w-[1px] h-full bg-black' />
@@ -29,7 +29,7 @@ const Reservation = () => (
             </View>
             <View className='flex-row justify-between items-center'>
                 <View>
-                    <Text className="max-w-52 text-xs">روشویی‌‌، نظافت داخل، واکس داشبورد</Text>
+                    <Text className="max-w-52 text-xs font-extralight">روشویی‌‌، نظافت داخل، واکس داشبورد</Text>
                     <View className="flex-row items-center gap-2 mt-2">
                         <View className="bg-green-200 rounded-full p-1.5">
                             <Moeny />
