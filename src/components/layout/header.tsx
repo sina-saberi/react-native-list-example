@@ -1,8 +1,9 @@
 import { BottomTabHeaderProps } from '@react-navigation/bottom-tabs'
 import React from 'react'
-import { Text, TouchableOpacity, View } from 'react-native'
+import { TouchableOpacity, View } from 'react-native'
 import Menu from '../../assets/icons/menu'
 import Heart from '../../assets/icons/heart'
+import Text from '../atoms/Text'
 
 const Header: React.FC<BottomTabHeaderProps> = ({ route }) => {
 
@@ -14,7 +15,7 @@ const Header: React.FC<BottomTabHeaderProps> = ({ route }) => {
     }
 
     return (
-        <View className='p-7 pb-4 flex-row items-center justify-between'>
+        <View className='p-7 pb-4 flex-row items-center justify-between bg-white'>
             <TouchableOpacity>
                 <Menu />
             </TouchableOpacity>

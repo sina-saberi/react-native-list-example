@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dimensions, Image, ScrollView, StyleSheet, Text, View, ViewStyle } from 'react-native'
+import { ScrollView } from 'react-native'
 import BannersSwiper from '../components/organisms/bannersSwiper'
 import Reservations from '../components/organisms/reservations'
 import Carousel from '../components/molecules/carousel'
@@ -8,7 +8,7 @@ import Carousel from '../components/molecules/carousel'
 const Business = () => {
 
     return (
-        <ScrollView >
+        <ScrollView className='bg-white'>
             <BannersSwiper />
             <Reservations />
             <Carousel />
