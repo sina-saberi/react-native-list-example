@@ -1,6 +1,6 @@
 import { BottomTabHeaderProps } from '@react-navigation/bottom-tabs'
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Text, TouchableOpacity, View } from 'react-native'
 import Menu from '../../assets/icons/menu'
 import Heart from '../../assets/icons/heart'
 
@@ -14,32 +14,16 @@ const Header: React.FC<BottomTabHeaderProps> = ({ route }) => {
     }
 
     return (
-        <View style={styles.container}>
+        <View className='p-7 pb-4 flex-row items-center justify-between'>
             <TouchableOpacity>
                 <Menu />
             </TouchableOpacity>
-            <Text style={styles.title}>{tabs[route.name]}</Text>
+            <Text className='font-bold text-2xl'>{tabs[route.name]}</Text>
             <TouchableOpacity>
                 <Heart />
             </TouchableOpacity>
         </View>
     )
 }
-
-
-const styles = StyleSheet.create({
-    container: {
-        padding: 30,
-        paddingBottom: 10,
-        backgroundColor: "white",
-        alignItems: "center",
-        flexDirection: "row",
-        justifyContent: "space-between",
-        width: "100%",
-    },
-    title: {
-        fontSize: 20
-    }
-})
 
 export default Header

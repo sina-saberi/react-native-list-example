@@ -1,14 +1,18 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Dimensions, Image, ScrollView, StyleSheet, Text, View, ViewStyle } from 'react-native'
 import BannersSwiper from '../components/organisms/bannersSwiper'
 import Reservations from '../components/organisms/reservations'
+import Carousel from '../components/molecules/carousel'
+
 
 const Business = () => {
+
     return (
-        <View style={{ flex: 1 }}>
+        <ScrollView >
             <BannersSwiper />
             <Reservations />
-        </View>
+            <Carousel />
+        </ScrollView>
     )
 }
 
